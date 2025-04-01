@@ -33,7 +33,6 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
-print("Development Mode: ", os.getenv("DEVELOPMENT_MODE", "False"))
 DEVELOPMENT_MODE = env.bool("DEVELOPMENT_MODE", "False")
 
 
